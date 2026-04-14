@@ -74,4 +74,87 @@ Steps Performed
 Screenshots
 <img width="1887" height="802" alt="image" src="https://github.com/user-attachments/assets/9f2f51c8-8dbb-4bdb-9848-22bf48fe011e" />
 
+***************************************************************************
+
+# AWS S3 Bucket Setup
+
+## Overview
+
+This project demonstrates how to create and configure an Amazon S3 bucket, upload files, and make them publicly accessible using a bucket policy.
+
+---
+
+## Steps Performed
+
+### 1. Created S3 Bucket
+
+* Bucket Name: `akshith-devops-s3-bucket-01`
+* Region: (your region)
+* Block Public Access: Disabled
+
+---
+
+### 2. Uploaded Files
+
+* Created folder: `images/`
+* Uploaded files into the folder
+* Verified files inside the bucket
+
+---
+
+### 3. Configured Bucket Policy
+
+Added the following policy to allow public access:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadAccess",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::akshith-devops-s3-bucket-01/*"
+    }
+  ]
+}
+```
+
+---
+
+### 4. Tested Public Access
+
+Opened file using browser URL:
+
+```
+https://akshith-devops-s3-bucket-01.s3.amazonaws.com/images/<file-name>
+```
+
+---
+
+## Screenshots
+
+1.
+<img width="1847" height="705" alt="image" src="https://github.com/user-attachments/assets/e9bf705c-276f-48d8-885d-5f337148f266" />
+2.<img width="1875" height="804" alt="image" src="https://github.com/user-attachments/assets/36a86b25-b0db-43f8-9786-1be3cd2cb178" />
+
+
+---
+
+## Outcome
+
+* Created S3 bucket
+* Uploaded files
+* Configured public access using bucket policy
+* Verified file access using URL
+
+---
+
+## Learning
+
+* S3 bucket creation and configuration
+* Bucket policies
+* Public access setup
+* Object URL usage
 
