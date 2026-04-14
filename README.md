@@ -44,3 +44,34 @@ Screenshots
 
 Result:
 Successfully implemented IAM best practices.
+
+***********************************************************
+
+
+Task 2: Enable CloudWatch Monitoring
+
+Objective
+To monitor AWS resources using CloudWatch by creating alarms, enabling notifications, monitoring load balancer metrics, and enabling detailed monitoring for EC2.
+
+Steps Performed
+1. Created CPU Utilization Alarm
+* Selected EC2 CPUUtilization metric
+* Set threshold greater than 70%
+
+2. Configured SNS Notification
+* Created SNS topic
+* Subscribed email and confirmed notification
+
+3. Monitored ALB Metrics
+* Created target group and load balancer
+* Generated traffic using DNS
+* Viewed metrics in monitoring tab
+
+4. Enabled Detailed Monitoring for EC2
+* Enabled 1-minute detailed monitoring for instance
+
+
+Screenshots
+<img width="1887" height="802" alt="image" src="https://github.com/user-attachments/assets/9f2f51c8-8dbb-4bdb-9848-22bf48fe011e" />
+
+
