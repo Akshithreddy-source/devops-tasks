@@ -75,6 +75,7 @@ Screenshots
 <img width="1887" height="802" alt="image" src="https://github.com/user-attachments/assets/9f2f51c8-8dbb-4bdb-9848-22bf48fe011e" />
 
 ***************************************************************************
+Taak 3
 
 # AWS S3 Bucket Setup
 
