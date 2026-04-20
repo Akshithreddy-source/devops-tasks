@@ -159,3 +159,49 @@ https://akshith-devops-s3-bucket-01.s3.amazonaws.com/images/<file-name>
 * Public access setup
 * Object URL usage
 
+*****************************************************************
+# Task 3: RDS MySQL Deployment using AWS
+
+## Objective
+To deploy a MySQL database on AWS RDS in a private subnet and connect it securely from an EC2 instance.
+
+---
+
+## Steps Performed
+
+1. Created a VPC with public and private subnets.
+2. Launched an EC2 instance in the public subnet.
+3. Created a DB Subnet Group using private subnets.
+4. Deployed MySQL RDS instance in private subnet.
+5. Configured Security Groups:
+   - Allowed MySQL (3306) access only from EC2.
+6. Enabled automated backups.
+7. Connected EC2 to RDS using MySQL client.
+
+---
+
+## Architecture
+
+- EC2 (Public Subnet) → Application Server
+- RDS MySQL (Private Subnet) → Database
+- Secure connection via Security Groups
+
+---
+
+## Outcome
+
+Successfully connected EC2 instance to RDS MySQL database and executed SQL queries.
+
+---
+<img width="1919" height="697" alt="image" src="https://github.com/user-attachments/assets/e9f712b2-7d91-4dce-b577-5119a68b11a9" />
+
+## Screenshots
+
+rds :
+<img width="1903" height="759" alt="image" src="https://github.com/user-attachments/assets/be10d75f-d62a-4ca5-8227-c24e1490fa88" />
+
+2. Security group (rd-sg):
+<img width="1897" height="771" alt="image" src="https://github.com/user-attachments/assets/c4f0a1d0-19f6-4e1a-a111-b4c975d4578c" />
+
+3. Database connection
+   <img width="1919" height="697" alt="image" src="https://github.com/user-attachments/assets/5f6247f2-d670-416a-a348-9e25574e4bce" />
