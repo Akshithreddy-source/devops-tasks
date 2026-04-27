@@ -75,7 +75,7 @@ Screenshots
 <img width="1887" height="802" alt="image" src="https://github.com/user-attachments/assets/9f2f51c8-8dbb-4bdb-9848-22bf48fe011e" />
 
 ***************************************************************************
-Taak 3
+Task 3
 
 # AWS S3 Bucket Setup
 
@@ -160,7 +160,7 @@ https://akshith-devops-s3-bucket-01.s3.amazonaws.com/images/<file-name>
 * Object URL usage
 
 *****************************************************************
-# Task 3: RDS MySQL Deployment using AWS
+# Task 4: RDS MySQL Deployment using AWS
 
 ## Objective
 To deploy a MySQL database on AWS RDS in a private subnet and connect it securely from an EC2 instance.
