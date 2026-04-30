@@ -103,26 +103,7 @@ This project demonstrates how to create and configure an Amazon S3 bucket, uploa
 
 ---
 
-### 3. Configured Bucket Policy
 
-Added the following policy to allow public access:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadAccess",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::akshith-devops-s3-bucket-01/*"
-    }
-  ]
-}
-```
-
----
 
 ### 4. Tested Public Access
 
@@ -205,3 +186,35 @@ rds :
 
 3. Database connection
    <img width="1919" height="697" alt="image" src="https://github.com/user-attachments/assets/5f6247f2-d670-416a-a348-9e25574e4bce" />
+
+
+
+
+
+ ***********************
+
+## Task 5: S3 Versioning, Object Lock, and Delete Protection
+
+### Steps Performed
+
+1. Created S3 bucket
+2. Enabled Versioning
+3. Enabled Object Lock (Governance mode)
+4. Created folder `finance/`
+5. Uploaded file `finance/test.txt`
+6. Applied rule to prevent deletion under `finance/*`
+7. Tried deleting the file → Access Denied
+
+---
+
+### Output
+
+- File inside `finance/` cannot be deleted
+- Error: Access Denied
+
+---
+
+### Screenshot
+
+<img width="1876" height="812" alt="image" src="https://github.com/user-attachments/assets/67a6ee0e-488a-4412-8729-6a3728d6f8af" />
+
